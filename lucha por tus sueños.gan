@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="proyecto" company="" webLink="http://" view-date="2021-11-12" view-index="1" gantt-divider-location="300" resource-divider-location="300" version="3.1.3100" locale="es_ES">
+    <description/>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="167" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="65" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="64" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="197" order="0"/>
+        <field id="tpc0" name="cargo" width="99" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="creacion del personaje y enemigos" color="#8cb6ce" meeting="false" start="2021-11-16" duration="3" complete="0" thirdDate="2021-11-01" thirdDate-constraint="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" name="creacion de dibujos del mapa" color="#8cb6ce" meeting="false" start="2021-11-19" duration="2" complete="0" thirdDate="2021-11-01" thirdDate-constraint="0" expand="true">
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+            <depend id="39" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="39" name="cracion de obstaculos" color="#8cb6ce" meeting="false" start="2021-11-23" duration="4" complete="0" thirdDate="2021-11-16" thirdDate-constraint="0" expand="true"/>
+        <task id="11" name="animacion de personaje y enemigos" color="#8cb6ce" meeting="false" start="2021-11-19" duration="2" complete="0" thirdDate="2021-11-01" thirdDate-constraint="0" expand="true">
+            <depend id="33" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="15" name="programacion del movimiento del personaje" color="#8cb6ce" meeting="false" start="2021-11-19" duration="1" complete="0" thirdDate="2021-11-01" thirdDate-constraint="0" expand="true">
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="19" name="progaramacion del mapa" color="#8cb6ce" meeting="false" start="2021-11-23" duration="4" complete="0" thirdDate="2021-11-01" thirdDate-constraint="0" expand="true">
+            <depend id="43" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="33" name="creacion del menu" color="#8cb6ce" meeting="false" start="2021-11-23" duration="3" complete="0" thirdDate="2021-11-01" thirdDate-constraint="0" expand="true"/>
+        <task id="43" name="programacion de enemigos" color="#8cb6ce" meeting="false" start="2021-11-29" duration="2" complete="0" thirdDate="2021-11-16" thirdDate-constraint="0" expand="true">
+            <depend id="46" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="46" name="terminar de programar el juego" color="#8cb6ce" meeting="false" start="2021-12-01" duration="2" complete="0" thirdDate="2021-11-16" thirdDate-constraint="0" expand="true">
+            <depend id="50" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="50" name="calar el juego y corregi errores" color="#8cb6ce" meeting="false" start="2021-12-03" duration="2" complete="0" thirdDate="2021-11-16" thirdDate-constraint="0" expand="true">
+            <depend id="51" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="51" name="fin del juego" color="#8cb6ce" meeting="false" start="2021-12-07" duration="1" complete="0" thirdDate="2021-11-16" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <custom-property-definition id="tpc0" name="cargo" type="text"/>
+        <resource id="0" name="Gabriel Pèrez" function="Default:1" contacts="" phone="">
+            <custom-property definition-id="tpc0" value="arte"/>
+        </resource>
+        <resource id="1" name="Felix Ornelas" function="Default:1" contacts="" phone="">
+            <custom-property definition-id="tpc0" value="animacion y menu"/>
+        </resource>
+        <resource id="2" name="Bernardo Camarena" function="Default:1" contacts="" phone="">
+            <custom-property definition-id="tpc0" value="programacion"/>
+        </resource>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="50" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="33" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="50" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="43" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="46" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="50" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
