@@ -1,0 +1,27 @@
+Aqui van los archivos de diseño de interfaces y animaciones.
+
+#Número de animacion
+#Nombre de la animacion
+#Nombre del archivo
+
+01
+futbolista 01
+futbolista1(64x64).png
+02
+futbolista 02
+futbolista2(64x64).png
+03
+futbolista 02
+futbolista3(64x64).png 
+04
+enemigo 01
+enemigo1(64x64).png
+05
+enemigo 02
+enemigo2(64x64).png
+06
+enemigo 03
+enemigo3(64x64).png
+07
+menu
+menu de juego.png
